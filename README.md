@@ -15,7 +15,7 @@ Imagine uma mãe ou um pai que pesquisa à noite, cansado, tentando encontrar um
 > 🌟 **Este site é como um pequeno farol** — uma base centralizada, fácil de usar e pensada para que famílias encontrem profissionais e indiquem quem já conhecem.
 
 <p align="center">
-    <img src="./src/img/logo.png" alt="logo de meu projeto TEA" width="50%">
+    <img src="./src/img/atipica2.png" alt="logo de meu projeto TEA" width="50%">
 </p>
 
 ---
