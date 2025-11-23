@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <title>Base de Profissionais para TEA</title>
+</head>
+<body>
+    <header>
+        <div class="box-titulo">
+            <h1>Busca Centralizada de Profisisonais para TEA</h1>
+        </div>
+        <div>
+        <div class="box-busca">
+            <div>
+                <input type="text" placeholder="Digite uma especializade ou plano médico">
+                <button id="botao-busca" onclick="iniciarBusca()">Buscar</button>
+            </div>        
+            <a class="castrado-pais">Apoie outros pais. Indique os profissionais e clínicas que conhece.<span> Clique Aqui!</span></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="card-container">
+            <!-- <article class="card">
+                <h2>JavaScript</h2>
+                <p>1995</p>
+                <p>JavaScript é uma linguagem de programação</p>
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">Saiba mais</a>
+            </article> -->
+        </section>
+    </main>
+
+    <footer>
+    <footer class="footer">
+        <ul class="footer-links">
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/fernando-do-valle/">Meu Linkedin</a>
+            </li>
+            <li>
+                <a target="_blank" id="autistas" href="https://www.instagram.com/azullaudo/">👉 Assim que apoio autistas💝</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+
+    <div id="cadastro-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Indique um Profissional ou Clínica</h2>
+            <p>Apenas dados públicos</p>
+            <form id="cadastro-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="professional-name" name="nome" required>
+
+                <label for="descricao">Descrição:</label>
+                <textarea id="professional-description" name="descricao" rows="4"></textarea>
+
+                <label for="especialidade">Especialidade:</label>
+                <input type="text" id="professional-specialty" name="especialidade" required>
+
+                <label for="contato">Contato:</label>
+                <input type="text" id="professional-contact" name="contato" required>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="professional-address" name="endereco" required>
+
+                <label for="plano_medico">Plano Médico:</label>
+                <input type="text" id="medical-plan" name="plano_medico">
+
+                <div class="lgpd-section">
+                    <div class="lgpd-text-container">
+                        <p><strong>Termos de Uso e Política de Privacidade (LGPD)</strong></p>
+                        <p class="lgpd-text">
+                            Ao enviar este formulário, você concorda que os dados fornecidos (nome, descrição, especialidade, contato, endereço e plano médico) serão coletados e armazenados em nossa base de dados. Essas informações serão revisadas e, se aprovadas, publicadas em nosso site para ajudar outras famílias. Os dados não serão utilizados para outros fins nem compartilhados com terceiros sem o seu consentimento, exceto quando exigido por lei. Você pode solicitar a remoção ou alteração dos seus dados a qualquer momento entrando em contato conosco.
+                        </p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="lgpd-check" name="lgpd-check" required>
+                        <label for="lgpd-check">Li e concordo com os termos de uso.</label>
+                    </div>
+                </div>
+
+                <button type="submit">Enviar Indicação</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
