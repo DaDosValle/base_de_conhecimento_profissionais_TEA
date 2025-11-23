@@ -372,3 +372,86 @@ strong {
     }
 }
 
+/* Media queries adicionais (não substituem regras existentes) */
+@media (max-width: 1024px) {
+    /* Ajustes para tablets grandes / laptops pequenos */
+    div input {
+        width: 50vw; /* Usa porcentagem da viewport em vez de valor fixo */
+        font-size: 1.25rem;
+    }
+
+    article {
+        width: 70%;
+        padding: 0.5rem 1rem;
+    }
+
+    main {
+        max-width: 95%;
+        height: auto; /* Evita cortes indesejados em telas menores */
+    }
+
+    body {
+        background-size: 60%;
+        background-position: right 85%;
+    }
+
+    .modal-content {
+        width: 90%;
+        max-width: 700px;
+        margin: 6% auto;
+    }
+
+    #botao-busca {
+        padding: 0.8rem 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Complemento ao bloco já existente: garante que artigos ocupem toda a largura */
+    article {
+        width: 100%;
+        padding: 0.75rem;
+    }
+
+    #botao-busca {
+        width: auto;
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    body {
+        background-size: 75%;
+        background-position: right 92%;
+    }
+
+    main {
+        height: auto; /* Permite que o conteúdo expanda verticalmente em telas pequenas */
+    }
+
+    .footer-links {
+        flex-direction: column; /* Melhor leitura em telas pequenas */
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Pequenos ajustes adicionais para celulares bem pequenos */
+    article {
+        padding: 0.6rem;
+    }
+
+    div input {
+        width: 92vw;
+        font-size: 1rem;
+    }
+
+    header {
+        padding: 0.6rem;
+    }
+
+    .modal-content {
+        margin: 8% 1rem;
+        width: calc(100% - 2rem);
+    }
+}
+
